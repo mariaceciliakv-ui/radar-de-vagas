@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Dados e Planilhas
+data/*.db
+data/*.sqlite
+data/browser_profile/
+data/output/*.xlsx
+!data/output/Radar_Vagas_Data.xlsx
+!data/.gitkeep
+
+# Relatórios gerados em execução
+reports/*.md
+reports/*.html
+!reports/.gitkeep
+
+# Ambientes e Chaves
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store

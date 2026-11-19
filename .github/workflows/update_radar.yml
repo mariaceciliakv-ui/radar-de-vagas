@@ -1,0 +1,84 @@
+name: Atualização Automática do Radar & Deploy Pages
+
+on:
+  # Executa de segunda a sexta às 08:00 e às 17:00 (Horário de Brasília / UTC 11:00 e 20:00)
+  schedule:
+    - cron: '0 11,20 * * 1-5'
+  
+  # Permite disparo manual com 1 clique pela aba "Actions" no GitHub
+  workflow_dispatch:
+
+  # Dispara automaticamente quando houver commit na branch main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 1. ATUALIZAÇÃO DO DASHBOARD E DADOS
+  update-radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar Dependências Principais
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl pyyaml jinja2 requests httpx beautifulsoup4 python-dateutil
+
+      - name: Sincronizar e Gerar Dashboard Web
+        run: |
+          python export_web_dashboard.py
+
+      - name: Commit e Push das Atualizações Automáticas
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html docs/index.html data/output/Radar_Vagas_Data.xlsx
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração nos dados detectada."
+          else
+            git commit -m "chore(auto): atualiza vagas e dashboard web [skip ci]"
+            git push origin main
+          fi
+
+  # 2. DEPLOY AUTOMÁTICO NO GITHUB PAGES
+  deploy-pages:
+    needs: update-radar
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload dos Artefatos Web (docs/)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs'
+
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
