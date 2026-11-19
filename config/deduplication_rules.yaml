@@ -1,0 +1,52 @@
+# ==============================================================================
+# RADAR DE VAGAS - REGRAS DE DEDUPLICAÇÃO E PERSISTÊNCIA
+# ==============================================================================
+
+estrategia_chave_unica:
+  # Identificadores prioritários por fonte
+  fontes_com_id_nativo:
+    - "linkedin"   # Extrai o job_id numérico da URL (ex: 3847291823)
+    - "indeed"     # Extrai o jk (job key)
+    - "glassdoor"  # Extrai o listingId
+    - "gupy"       # Extrai o UUID da vaga no portal
+
+  # Para fontes sem ID estável ou URLs dinâmicas, utiliza hash composto SHA-256
+  composicao_hash_composto:
+    - "empresa_normalizada"
+    - "cargo_normalizado"
+    - "localidade_normalizada"
+
+normalizacao_texto:
+  remover_acentos: true
+  converter_minusculas: true
+  remover_caracteres_especiais: true
+  remover_espacos_duplos: true
+  ignorar_sufixos_empresa:
+    - "ltda"
+    - "s.a."
+    - "sa"
+    - "brasil"
+    - "inc"
+    - "corp"
+
+sanitizacao_url:
+  remover_parametros_rastreamento:
+    - "utm_source"
+    - "utm_medium"
+    - "utm_campaign"
+    - "utm_term"
+    - "utm_content"
+    - "refId"
+    - "trackingId"
+    - "position"
+    - "pageNum"
+    - "currentJobId"
+    - "trk"
+    - "fbclid"
+    - "gclid"
+
+politica_armazenamento_db:
+  banco_sqlite: "data/job_vault.db"
+  tabela_historico: "seen_jobs"
+  dias_validade_vaga: 30 # Após 30 dias, uma vaga vista pode ser reavaliada se reaberta
+  evitar_reprocessamento_mesma_execucao: true

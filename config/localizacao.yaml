@@ -1,0 +1,27 @@
+# ==============================================================================
+# RADAR DE VAGAS - CONFIGURAÇÃO DE LOCALIZAÇÃO E MODALIDADES
+# ==============================================================================
+
+remoto:
+  - Brasil
+  - Remote
+  - Home Office
+  - Remoto
+
+hibrido:
+  - Campinas
+  - Valinhos
+  - Vinhedo
+  - Hortolândia
+  - Sumaré
+  - Paulínia
+
+presencial:
+  - Campinas
+  - Valinhos
+  - Vinhedo
+  - Hortolândia
+  - Sumaré
+  - Paulínia
+  - Indaiatuba
+  - Americana

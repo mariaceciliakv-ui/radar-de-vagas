@@ -1,0 +1,147 @@
+# ==============================================================================
+# RADAR DE VAGAS - PARÂMETROS DE BUSCA (CARGOS, LOCAIS, MODALIDADES E FONTES)
+# ==============================================================================
+
+# 1. CARGOS E TÍTULOS PROCURADOS (ABRANGÊNCIA AMPLA PARA TRANSIÇÃO DE CARREIRA)
+# Não limitado a "Analista de Dados" — inclui BI, Indicadores, Operações, Comercial e Logística
+cargos_procurados:
+  dados_e_bi:
+    - "Analista de BI"
+    - "Analista de Business Intelligence"
+    - "Analista de Power BI"
+    - "Especialista em Power BI"
+    - "Analista de Dados"
+    - "Business Analytics"
+    - "Analista de Analytics"
+    - "Consultor de BI"
+
+  indicadores_performance_e_planejamento:
+    - "Analista de Indicadores"
+    - "Analista de Performance"
+    - "Analista de Gestão e Indicadores"
+    - "Analista de Métricas e KPIs"
+    - "Analista de Planejamento e Controle"
+    - "Analista de Planejamento Operacional"
+    - "Analista de Controladoria Operacional"
+
+  operacoes_processos_e_backoffice:
+    - "Analista de Operações"
+    - "Analista de Operações e Dados"
+    - "Analista de Back Office"
+    - "Analista de Processos e Operações"
+    - "Analista de Eficiência Operacional"
+    - "Analista de Inteligência Operacional"
+
+  logistica_pcp_e_supply_chain:
+    - "Analista de Logística"
+    - "Analista de Supply Chain"
+    - "Analista de PCP"
+    - "Analista de Planejamento e Controle da Produção"
+    - "Analista de Dados Logísticos"
+    - "Analista de Expedição e Faturamento"
+
+  comercial_sales_ops_e_mercado:
+    - "Analista de Inteligência Comercial"
+    - "Analista de Sales Ops"
+    - "Analista de Inteligência de Mercado"
+    - "Analista de Atendimento e Operações"
+    - "Analista de Revenue Operations"
+
+  recursos_humanos_e_dp:
+    - "Analista de Recursos Humanos"
+    - "Assistente de RH"
+    - "Analista de Gente e Gestão"
+    - "Analista de Recrutamento e Seleção"
+    - "Talent Acquisition Specialist"
+
+  financeiro_e_controladoria:
+    - "Analista Financeiro"
+    - "Assistente Financeiro"
+    - "Analista de Controladoria"
+    - "Analista de Faturamento"
+
+  atendimento_e_customer_success:
+    - "Analista de Customer Success"
+    - "Analista de Suporte ao Cliente"
+    - "Analista de Customer Experience"
+
+# 1.1 ATSs E PLATAFORMAS DE RECRUTAMENTO SUPORTADAS
+plataformas_ats:
+  gupy:
+    dork: 'site:gupy.io'
+    ativo: true
+  greenhouse:
+    dork: 'site:boards.greenhouse.io'
+    ativo: true
+  lever:
+    dork: 'site:jobs.lever.co'
+    ativo: true
+  kenoby_senior:
+    dork: 'site:jobs.kenoby.com OR site:jobs.senior.com.br'
+    ativo: true
+  workday:
+    dork: 'site:myworkdayjobs.com'
+    ativo: true
+  quickin:
+    dork: 'site:jobs.quickin.io'
+    ativo: true
+
+# 2. LOCALIDADES DE INTERESSE
+localidades:
+  cidade_base_usuario: "Campinas, SP"
+  estado_base: "SP"
+  pais: "Brasil"
+  
+  # Cidades prioritárias para vagas presenciais/híbridas (Região Metropolitana de Campinas - RMC)
+  cidades_prioritarias:
+    - "Campinas - SP"
+    - "Paulínia - SP"
+    - "Sumaré - SP"
+    - "Hortolândia - SP"
+    - "Indaiatuba - SP"
+    - "Valinhos - SP"
+    - "Vinhedo - SP"
+    - "Americana - SP"
+    - "Jaguariúna - SP"
+    - "Santa Bárbara d'Oeste - SP"
+    - "Nova Odessa - SP"
+    - "Jundiaí - SP"
+    - "São Paulo - SP" # Relevante para modelos híbridos pontuais
+  
+  # Abrangência nacional irrestrita para qualquer vaga Remota / Home Office
+  abrangencia_nacional_se_remoto: true
+
+# 3. MODALIDADES DE TRABALHO E ORDEM DE PREFERÊNCIA
+modalidades:
+  ordem_prioridade:
+    1: "Remoto / Home Office"
+    2: "Híbrido (Campinas, RMC e SP)"
+    3: "Presencial (Campinas e RMC)"
+  
+  aceita_remoto: true
+  aceita_hibrido: true
+  aceita_presencial_local: true
+  aceita_presencial_fora_da_base: false # Presencial fora de Campinas/RMC não é prioridade
+
+# 4. FONTES DE VAGAS (JOB BOARDS)
+fontes_de_vagas:
+  linkedin:
+    ativo: true
+    modo: "guest_public"
+    limite_vagas_por_termo: 25
+  indeed:
+    ativo: true
+    modo: "public_search"
+    limite_vagas_por_termo: 25
+  glassdoor:
+    ativo: true
+    modo: "public_search"
+    limite_vagas_por_termo: 15
+  google_jobs:
+    ativo: true
+    modo: "serp_parser"
+    limite_vagas_por_termo: 20
+  gupy:
+    ativo: true
+    modo: "public_portal"
+    limite_vagas_por_termo: 20

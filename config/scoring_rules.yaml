@@ -1,0 +1,38 @@
+# ==============================================================================
+# RADAR DE VAGAS - REGRAS DE PONTUAÇÃO (FIT SCORE PARA TRANSIÇÃO DE CARREIRA)
+# ==============================================================================
+# Pontuação de 0 a 100 pontos, valorizando o perfil híbrido de Negócios + Dados.
+# ==============================================================================
+
+pesos_gerais:
+  competencias_tecnicas_consolidadas_max: 35 # Power BI, Excel, SAP, CRM, KPIs, Processos
+  competencias_em_desenvolvimento_max: 10   # SQL, DAX, Power Query, Python (oportunidade de crescer)
+  alinhamento_area_e_cargo_max: 20          # BI, Indicadores, Operações, Comercial, Logística/PCP
+  modalidade_max: 20                        # Remoto > Híbrido > Presencial RMC
+  localidade_max: 10                        # Campinas e Região Metropolitana
+  senioridade_max: 5                        # Compatibilidade de nível
+
+# Detalhamento de pontuação por modalidade
+pontos_modalidade:
+  remoto: 20
+  hibrido_campinas_ou_rmc: 20
+  hibrido_sp_capital: 15
+  presencial_campinas_ou_rmc: 12
+  presencial_fora_da_rmc: -15 # Penalidade para presencial em locais distantes
+
+# Detalhamento de pontuação por localidade
+pontos_localidade:
+  campinas_sede: 10
+  regiao_metropolitana_campinas: 9 # Paulínia, Sumaré, Hortolândia, Indaiatuba, Valinhos, Americana, etc.
+  remoto_brasil: 10
+  outra_regiao_se_presencial: -20
+
+# Classificação das oportunidades
+limiares_classificacao:
+  excelente: 80   # Vagas com fit altíssimo em Negócios + BI
+  alta_aderencia: 65
+  media_aderencia: 45
+  baixa_aderencia: 30
+
+# Gatilho para busca automática de recrutadores
+score_minimo_para_buscar_recrutadores: 65

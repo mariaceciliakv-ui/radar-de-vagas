@@ -1,0 +1,146 @@
+# ==============================================================================
+# RADAR DE VAGAS - PERFIL DA CANDIDATA (YAML ESTRUTURADO OFICIAL)
+# ==============================================================================
+
+candidata:
+  nome: "Maria Cecília Jesus Oliveira"
+  estado_civil: "Solteira"
+  data_nascimento: "1998-12-20"
+  nacionalidade: "Brasileira"
+  cnh: "Categoria B"
+  
+  contato:
+    email: "mariacecilia.kv@gmail.com"
+    telefones:
+      - "(11) 92039-6714"
+      - "(19) 98735-3831"
+    endereco:
+      bairro: "Jardim Fernanda"
+      cidade: "Campinas"
+      estado: "SP"
+      cep: "07906-603"
+    redes_e_links:
+      linkedin: "https://www.linkedin.com/in/maria-c-j-oliveira"
+      site: "https://sites.google.com/view/mycvbymaria"
+
+  posicionamento:
+    titulo_principal: "Analista de Business Intelligence, Indicadores e Performance Operacional/Comercial"
+    objetivo: >
+      Atuar nas áreas de Administração, Operações, Gestão de Produtos, Customer Success, Implantação de Sistemas, Comércio Exterior,
+      Logística, Processos, Projetos ou Inteligência de Negócios, contribuindo para a melhoria contínua dos processos, otimização
+      operacional e crescimento da empresa através de soluções estratégicas e inovação.
+    resumo_profissional: >
+      Profissional com formação em Administração e Logística, atualmente graduanda em Comércio Exterior, com experiência nas áreas
+      administrativa, comercial, operacional, atendimento ao cliente, implantação de sistemas, gestão de equipes, tecnologia e melhoria de processos.
+      Experiência na coordenação de operações, implantação de sistemas ERP e PDV, criação de processos internos, gestão de indicadores,
+      suporte aos usuários, treinamento de colaboradores, organização financeira, controle de estoque, emissão de documentos fiscais e atendimento ao cliente.
+      Perfil analítico, visão estratégica, facilidade para aprender novas tecnologias e grande capacidade de organização. Atua com foco em
+      eficiência operacional, redução de custos, automação de processos e melhoria da experiência do cliente. Desenvolve projetos utilizando Inteligência Artificial,
+      automações e plataformas Low-Code.
+
+  formacao_academica:
+    graduacoes:
+      - curso: "Bacharelado em Administração"
+        instituicao: "UNOPAR"
+        status: "Concluído"
+        conclusao: "Julho/2024"
+      - curso: "Tecnólogo em Logística"
+        instituicao: "UNOPAR"
+        status: "Concluído"
+        conclusao: "Dezembro/2022"
+      - curso: "Tecnólogo em Comércio Exterior"
+        instituicao: "FATEC Indaiatuba"
+        status: "Em andamento"
+    pos_graduacao_mba:
+      - curso: "MBA / Especialização em Análise de Dados e Inteligência Artificial"
+        status: "Em andamento / Especialização"
+
+  experiencias_profissionais:
+    - cargo: "Subgerente Administrativo e Operacional"
+      empresa: "Claudinha Lanches"
+      atividades:
+        - "Coordenação das operações diárias da empresa"
+        - "Gestão de equipe operacional e atendimento ao cliente"
+        - "Controle financeiro, fechamento de caixa e gestão de estoque"
+        - "Cadastro e atualização de produtos e formação de preços"
+        - "Implantação completa do sistema Yooga e integração com iFood"
+        - "Criação de dashboards para acompanhamento de indicadores"
+        - "Padronização dos processos internos e organização administrativa"
+        - "Apoio à tomada de decisões"
+      resultados:
+        - "Implantação completa do sistema de gestão e organização dos processos internos"
+        - "Melhoria no controle financeiro e maior eficiência operacional"
+        - "Redução de retrabalho e estruturação dos indicadores de desempenho"
+
+    - cargo: "Analista de Negócios"
+      empresa: "Aperam Serviços e Soluções"
+      atividades:
+        - "Administração do CRM e Key User dos sistemas internos"
+        - "Cadastro e atualização de produtos e alteração de códigos SAP"
+        - "Apoio às equipes comerciais e atendimento aos clientes internos"
+        - "Emissão de documentos e controle de pedidos"
+        - "Acompanhamento do fluxo comercial"
+        - "Desenvolvimento do portal interno E-Aperam"
+        - "Criação de manuais operacionais e materiais de treinamento"
+        - "Padronização de processos"
+      resultados:
+        - "Contribuição para a gestão de mais de 200 pedidos mensais"
+        - "Redução aproximada de 25% nas inconsistências operacionais"
+        - "Redução de aproximadamente 30% no tempo de treinamento de novos colaboradores"
+        - "Redução de cerca de 20% nos erros relacionados a pedidos e faturamento"
+        - "Melhoria de aproximadamente 20% no tempo de resposta ao cliente"
+        - "Redução próxima de 15% nos atrasos relacionados às cobranças"
+
+    - cargo: "Assistente Administrativo"
+      empresa: "Experiência Corporativa"
+      atividades:
+        - "Atendimento ao cliente e organização documental"
+        - "Controle de pedidos, emissão de notas fiscais e boletos"
+        - "Cadastro de clientes e organização financeira"
+        - "Acompanhamento de pagamentos e controle de planilhas"
+        - "Apoio administrativo geral"
+
+    - cargo: "Prestação de Serviços Administrativos (MEI)"
+      empresa: "Autônomo"
+      atividades:
+        - "Abertura e encerramento de empresas"
+        - "Emissão de notas fiscais e declaração de Imposto de Renda"
+        - "Organização financeira e negociação de débitos"
+        - "Atendimento ao cliente e consultoria administrativa"
+
+  cursos_e_certificacoes:
+    - "Power BI – Fundação Bradesco"
+    - "Análise de Balanços"
+    - "Inglês Intermediário"
+    - "Preparação CPA-10"
+    - "Gestão Comercial"
+    - "E-commerce"
+
+  competencias_tecnicas:
+    - "Power BI"
+    - "Excel Avançado"
+    - "SAP S/4HANA"
+    - "CRM"
+    - "ERP"
+    - "Google Workspace"
+    - "Microsoft Office"
+    - "Business Intelligence"
+    - "Criação de Dashboards"
+    - "Mapeamento de Processos"
+    - "Indicadores de Desempenho (KPIs)"
+    - "Comércio Exterior"
+    - "Logística"
+    - "Faturamento e Emissão de NF-e (CFOP, XML, Boletos)"
+    - "Automação de Processos e Inteligência Artificial"
+    - "Low-Code / No-Code (Lovable, n8n, Claude AI, Perplexity AI, Browserbase, Google Sites)"
+
+  idiomas:
+    portugues: "Nativo"
+    ingles: "Intermediário"
+
+  preferencias_trabalho:
+    prioridade_maxima:
+      - "Remoto / Home Office"
+      - "Híbrido"
+    prioridade_secundaria:
+      - "Presencial em Campinas e Região Metropolitana de Campinas (RMC)"

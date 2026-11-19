@@ -1,0 +1,71 @@
+# ==============================================================================
+# RADAR DE VAGAS - CARGOS PRIORITÁRIOS E PALAVRAS-CHAVE DE BUSCA (MULTI-ÁREAS)
+# ==============================================================================
+
+prioridade_alta:
+  - Analista de Dados Jr
+  - Analista de BI Jr
+  - Assistente de BI
+  - Assistente de Dados
+  - Analista de Indicadores Jr
+  - Analista de Performance Jr
+  - Analista de Business Analytics Jr
+  - Analista de Reporting Jr
+  - Power BI Jr
+
+prioridade_media:
+  - Analista de Operações Jr
+  - Analista Comercial Jr
+  - Assistente de Operações
+  - Assistente Comercial
+  - Back Office
+  - Analista de Planejamento Jr
+  - Analista de Supply Chain Jr
+  - Analista de Processos Jr
+
+# ── Novas Áreas Expandidas ─────────────────────────────────────────────────────
+areas_expandidas:
+  recursos_humanos_e_dp:
+    - Analista de Recursos Humanos Jr
+    - Assistente de Recursos Humanos
+    - Analista de Gente e Gestão Jr
+    - Analista de R&S / Recrutamento Jr
+    - Assistente de Departamento Pessoal
+    - Talent Acquisition Assistant
+  financeiro_e_controladoria:
+    - Analista Financeiro Jr
+    - Assistente Financeiro
+    - Analista de Faturamento Jr
+    - Analista de Contas a Pagar / Receber Jr
+    - Assistente de Controladoria
+  atendimento_e_cs:
+    - Analista de Customer Success Jr
+    - Analista de Suporte ao Cliente
+    - Assistente de Atendimento e Relacionamento
+    - Analista de Customer Experience (CX)
+  marketing_e_growth:
+    - Analista de Marketing Jr
+    - Assistente de Marketing Digital
+    - Analista de Growth e Performance Jr
+    - Analista de E-commerce Jr
+
+palavras_chave:
+  - Power BI
+  - SQL
+  - Excel
+  - DAX
+  - Power Query
+  - Business Intelligence
+  - Business Analytics
+  - Data Analytics
+  - Indicadores
+  - Dashboard
+  - Reporting
+  - SAP
+  - CRM
+  - Salesforce
+  - Hubspot
+  - Processos
+  - Gupy
+  - Greenhouse
+  - Lever

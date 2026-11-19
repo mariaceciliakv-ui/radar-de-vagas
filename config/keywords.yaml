@@ -1,0 +1,70 @@
+# ==============================================================================
+# RADAR DE VAGAS - PALAVRAS-CHAVE, SINÔNIMOS E TERMOS DE FILTRAGEM
+# ==============================================================================
+
+# 1. PALAVRAS-CHAVE ESSENCIAIS (ALTO PESO NO MATCH DE TRANSIÇÃO DADOS/NEGÓCIOS)
+palavras_chave_essenciais:
+  - "Power BI"
+  - "Excel"
+  - "Excel Avançado"
+  - "SAP"
+  - "CRM"
+  - "Indicadores"
+  - "KPIs"
+  - "Business Intelligence"
+  - "BI"
+  - "Análise de Dados"
+  - "Gestão de Indicadores"
+  - "Processos"
+  - "Logística"
+  - "Back Office"
+  - "Operações"
+
+# 2. PALAVRAS-CHAVE COMPLEMENTARES / OPORTUNIDADES DE DESENVOLVIMENTO
+palavras_chave_complementares:
+  - "DAX"
+  - "Power Query"
+  - "SQL"
+  - "Modelagem de Dados"
+  - "Python"
+  - "ETL"
+  - "PCP"
+  - "Faturamento"
+  - "Expedição"
+  - "Supply Chain"
+  - "Sales Ops"
+  - "Comercial"
+  - "Controle de Estoque"
+  - "Mapeamento de Processos"
+  - "BPMN"
+  - "Relatórios Gerenciais"
+  - "Dashboards"
+
+# 3. MAPEAMENTO DE SINÔNIMOS E EQUIVALÊNCIAS
+sinonimos_e_aliases:
+  "Power BI": ["PowerBI", "Power-BI", "PBI", "MS Power BI", "Microsoft Power BI"]
+  "Excel": ["Excel Avançado", "MS Excel", "Planilhas"]
+  "SAP": ["ERP SAP", "SAP R/3", "SAP S/4HANA", "SAP Business One"]
+  "Business Intelligence": ["BI", "Inteligência de Negócios", "Inteligência de Mercado", "Analytics"]
+  "Indicadores": ["KPIs", "KPI", "Métricas", "Painéis de Indicadores", "Indicadores de Desempenho", "SLA", "OKRs"]
+  "PCP": ["Planejamento e Controle da Produção", "Planejamento Operacional"]
+  "Logística": ["Supply Chain", "Cadeia de Suprimentos", "Intralogística", "Expedição e Transporte"]
+  "Remoto": ["Home Office", "100% Remoto", "Trabalho Remoto", "Teletrabalho", "Anywhere Office"]
+  "Híbrido": ["Modelo Híbrido", "Regime Híbrido", "Hibrido"]
+
+# 4. TERMOS EXCLUDENTES (FILTRO NEGATIVO DE TÍTULOS INCOMPATÍVEIS)
+termos_excludentes_titulo:
+  - "Estágio"
+  - "Estagiário"
+  - "Estagiária"
+  - "Jovem Aprendiz"
+  - "Menor Aprendiz"
+  - "Trainee"
+  - "Engenheiro Civil"
+  - "Técnico de Enfermagem"
+  - "Motorista"
+  - "Vendedor Externo Porta a Porta"
+  - "Balconista"
+  - "Auxiliar de Limpeza"
+  - "Operador de Empilhadeira"
+  - "Operador de Torno"

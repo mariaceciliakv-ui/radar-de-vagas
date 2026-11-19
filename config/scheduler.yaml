@@ -1,0 +1,40 @@
+# ==============================================================================
+# RADAR DE VAGAS - CONFIGURAÇÃO DE AGENDAMENTO E HORÁRIOS DE EXECUÇÃO
+# ==============================================================================
+
+agendamento:
+  fuso_horario: "America/Sao_Paulo"
+  
+  # Horários diários de execução recomendados
+  # 08:00 (vagas postadas no início do dia útil)
+  # 12:30 (vagas postadas na metade do dia)
+  # 18:00 (consolidação final da tarde)
+  horarios_diarios:
+    - "08:00"
+    - "12:30"
+    - "18:00"
+
+  # Dias da semana permitidos para execução
+  dias_da_semana:
+    - "segunda-feira"
+    - "terca-feira"
+    - "quarta-feira"
+    - "quinta-feira"
+    - "sexta-feira"
+    - "sabado"
+    # "domingo"
+
+  # Configuração para Windows Task Scheduler
+  windows_task_scheduler:
+    nome_tarefa: "RadarDeVagas_AutoCollector"
+    descricao: "Coleta e pontuacao automatica de vagas de emprego para o Radar de Vagas"
+    executar_mesmo_sem_login: false
+    executar_com_privilegios_elevados: false
+
+  # Configuração para modo daemon / processo em segundo plano
+  modo_daemon:
+    intervalo_minutos_entre_execucoes: 240 # 4 horas
+    pausa_noturna:
+      ativo: true
+      inicio_pausa: "22:00"
+      fim_pausa: "07:00"
